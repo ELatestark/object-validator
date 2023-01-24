@@ -3,7 +3,7 @@
 NAME     = object-validator
 RPM_NAME := python-$(NAME)
 PYTHON   := python
-VERSION  := 0.2.0
+VERSION  := $(shell sed -n s/[[:space:]]*Version:[[:space:]]*//p $(RPM_NAME).spec)
 
 build:
 	$(PYTHON) setup.py build
