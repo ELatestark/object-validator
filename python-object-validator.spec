@@ -11,7 +11,7 @@ validate arbitrary Python objects or to support custom validation rules.}
 
 Name:    python-%project_name
 Version: 0.2.0
-Release: 4.CROC1%{?dist}
+Release: 4.CROC2%{?dist}
 Summary: Python object validation module
 
 Group:   Development/Libraries
@@ -32,6 +32,9 @@ BuildRequires: python%{python3_pkgversion}-setuptools
 %if 0%{with tests}
 BuildRequires: python%{python3_pkgversion}-pytest >= 2.2.4
 %endif  # with tests
+Obsoletes: python36-%project_name
+Conflicts: python36-%project_name
+
 %description -n python%{python3_pkgversion}-%project_name %{project_description}
 
 
