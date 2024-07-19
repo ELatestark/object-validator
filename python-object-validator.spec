@@ -11,7 +11,7 @@ validate arbitrary Python objects or to support custom validation rules.}
 
 Name:    python-%project_name
 Version: 0.2.0
-Release: 4.CROC2%{?dist}
+Release: 4.ROCKIT3TEST%{?dist}
 Summary: Python object validation module
 
 Group:   Development/Libraries
